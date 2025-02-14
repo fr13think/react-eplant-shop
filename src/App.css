@@ -37,20 +37,36 @@
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
-  transform: translate(-50%, -50%);
+  margin-top: 30vh; /* Menggunakan unit viewport height untuk penyesuaian otomatis */
+  margin-left: auto; /* Menggunakan auto margin untuk sentralisasi */
+  margin-right: auto;
+  transform: translateY(-50%);
   z-index: 1;
   text-align: center;
-  /* background-color: red; */
-  width: 400px;
-  height: 400px;
+  width: 80%; /* Menggunakan persentase untuk penyesuaian otomatis */
+  max-width: 400px; /* Membatasi lebar maksimum */
+  height: auto; /* Menggunakan height auto agar tinggi menyesuaikan konten */
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
 }
+
+@media (max-width: 768px) {
+  .landing_content {
+    margin-top: 20vh; /* Penyesuaian margin top untuk layar kecil */
+    width: 90%; /* Memperbesar lebar pada layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .landing_content {
+    margin-top: 10vh; /* Penyesuaian margin top untuk layar sangat kecil */
+    width: 95%; /* Memperbesar lebar pada layar sangat kecil */
+  }
+}
+
 
 .content p,
 .content h1 {

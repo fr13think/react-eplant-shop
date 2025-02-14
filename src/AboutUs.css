@@ -1,33 +1,64 @@
 .about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
+    width: 90%; /* Menggunakan persentase untuk penyesuaian otomatis */
+    max-width: 1000px; /* Membatasi lebar maksimum */
+    margin: 0 auto; /* Menyentralisasi elemen */
+    padding: 20px;
     text-align: justify;
-  }
-  
-  .about-us-heading {
-    font-size: 32px;
+}
+
+.about-us-heading {
+    font-size: 2em; /* Menggunakan unit em untuk penyesuaian otomatis */
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .about-us-description {
-    font-size: 18px;
+}
+
+.about-us-description {
+    font-size: 1.125em; /* Menggunakan unit em untuk penyesuaian otomatis */
     color: #666;
     margin-bottom: 30px;
     text-align: center;
-  }
-  
-  .about-us-content {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  .plant_logo_right{
-    text-align: right;
-  }
+}
 
-  .plant_logo_left{
+.about-us-content {
+    font-size: 1.125em; /* Menggunakan unit em untuk penyesuaian otomatis */
+    margin-bottom: 20px;
+}
+
+.plant_logo_right {
+    text-align: right;
+}
+
+.plant_logo_left {
     text-align: left;
-  }
+}
+
+@media (max-width: 768px) {
+    .about-us-container {
+        width: 95%; /* Penyesuaian lebar untuk layar lebih kecil */
+        padding: 15px; /* Penyesuaian padding untuk layar lebih kecil */
+    }
+
+    .about-us-heading {
+        font-size: 1.75em; /* Penyesuaian ukuran font untuk layar lebih kecil */
+    }
+
+    .about-us-description, .about-us-content {
+        font-size: 1em; /* Penyesuaian ukuran font untuk layar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-container {
+        width: 100%; /* Penyesuaian lebar untuk layar sangat kecil */
+        padding: 10px; /* Penyesuaian padding untuk layar sangat kecil */
+    }
+
+    .about-us-heading {
+        font-size: 1.5em; /* Penyesuaian ukuran font untuk layar sangat kecil */
+    }
+
+    .about-us-description, .about-us-content {
+        font-size: 0.875em; /* Penyesuaian ukuran font untuk layar sangat kecil */
+    }
+}
